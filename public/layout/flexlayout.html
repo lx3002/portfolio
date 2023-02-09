@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+     .flex-container{
+     display: flex;
+      background-color: gold;
+      flex-direction: row;
+       justify-content:stretch ;
+        align-items: stretch;
+     }
+
+          /*
+
+       /*   .flex-container>div{
+      background-color: tomato;
+      padding: 20px;
+      font-size: 30px;
+      margin: 20px;
+       }    */
+     #item1{
+       background-color: white;
+         padding: 10px;
+         margin: 20px;
+         order: 2;
+     }
+
+     #item2{
+       background-color: darkslategrey;
+         padding: 10px;
+         margin: 20px;
+         order: 3;
+
+     }
+
+     #item3 {
+         background-color: orange;
+         padding: 10px;
+         margin: 20px;
+         order: 3;
+     }
+
+     #item4 {
+         background-color: purple;
+         padding: 10px;
+         margin: 20px;
+     }
+     @media only screen and (max-width: 600px) {
+         .flex-container{
+         display: flex;
+          flex-direction: column;
+         }
+     }
+
+    </style>
+
+
+
+</head>
+<body>
+<div class="flex-container">
+    <div id="item1">1</div>
+ <div id="item2">2</div>
+ <div id="item3">3</div>
+ <div id="item4">4</div>
+
+</div>
+</body>
+</html>
